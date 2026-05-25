@@ -1,170 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    <title>Document</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="images/logo.jpg" alt="" width="50%" heught="50%"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">首頁</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">SDGs電子書</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">VR觀光導覽</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  個人作品集
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="https://edu.gogofinder.com.tw/gogofinderReader/index.php?bid=117437130"target="blank">電子書</a></li>
-                  <li><a class="dropdown-item" href="https://www.qwhouse720.com/tour/b08d66c289750081"target="blank">VR觀光導覽</a></li>
-                  <li><a class="dropdown-item" href="#">作品三</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="myself.html" target="_blank">作者簡介</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="images/1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="images/2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="images/3.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="images/4.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bootstrap網頁</title>    
+  </head>
+  <body style="padding-top:50px">
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+	  <div class="container-fluid">
+        <a class="navbar-brand" href="#">我的聽團日記</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="navbar-nav me-auto">           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">團</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">怕胖團</a>
+                <a class="dropdown-item" href="#">美秀集團</a>
+				<a class="dropdown-item" href="#">芒果醬</a>
+				<a class="dropdown-item" href="#"></a>
+              </div>
+            </li>
+			<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">還是團</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#"></a>
+                <a class="dropdown-item" href="#">Who Cares 胡凱兒</a>
+				<a class="dropdown-item" href="#">康士坦的變化球</a>
+				<a class="dropdown-item" href="#">血肉果汁機</a>
+				<a class="dropdown-item" href="#">公館青少年</a>
+				<a class="dropdown-item" href="#">溫蒂漫步</a>
+              </div>
+            </li>
+          </ul>
+		  <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="輸入團名">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>  
+        </div>		
       </div>
+    </nav>
 
-      <div class="container text-cwnter">
-        <h2>Sky 光遇</h2>
-        <p>一款社交休閒娛樂遊戲，讓你放鬆身心靈，擁有多變的季節風景。</p>
+    <!-- 內容區 -->
+    <main>	
+      <div class="container">
+	    <h1 class="text-center mt-5">聽團日常</h1>
+		
+	    <!-- 第一個團 -->
+	    <hr>
+        <div class="row">
+          <div class="col-md-7">
+            <h2>怕胖團<small>（於2007成立）</small></h2>
+            <p class="lead">台灣流行龐克創作樂團，由吉他手兼主唱閃亮、貝斯手大寶與鼓手老外組成。
+                以Pop Punk（流行龐克）為基底，曲風直率坦白，歌詞充滿青春、生活感與真誠的情感，現場演出極具感染力。</p>
+          </div>
+          <div class="col-md-5">
+            <img src="1.jpg" class="img-fluid">
+          </div>
+        </div>	
+		
+        <!-- 第二個團 -->
+        <hr>
+        <div class="row">
+          <div class="col-md-7 order-md-5">
+            <h2>美秀集團<small>（於2016成立）</small></h2>
+            <p class="lead">台灣嘉義的獨立樂團，風格融合搖滾、民謠與電子，自創「賽博台客」曲風。
+                其招牌特色為充滿在地台味的唱腔，以及結合低科技自製實驗樂器（如炫炮）的強烈視覺與聽覺張力，代表作包含〈捲菸〉與〈電火王〉。</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img src="2.jpg" class="img-fluid">
+          </div>
+        </div>
+		
+	    <!-- 第三個團 -->
+	    <hr>
+        <div class="row">
+          <div class="col-md-7">
+            <h2>芒果醬<small>(於2017成立)</small></h2>
+            <p class="lead">台灣新生代獨立樂團，由主唱郭佐治、吉他手蔡有倫、貝斯手李皝達、鼓手黃聖智組成。
+                他們以直白率性、具有高傳唱度的流行搖滾曲風聞名，常融入動漫、電玩與幽默元素，被譽為新一代的「ㄎㄧㄤ團」。</p>
+          </div>
+          <div class="col-md-5">
+            <img src="3.jpg" class="img-fluid">
+          </div>
+        </div>	  
+	  </div>
+	</main>
+	
+    <!-- 頁尾 -->
+	<footer>
+	  <div class="container">
+	    <hr>              
+        <p>&copy; 2026一起聽團&middot;<a href="#">隱私權政策</a>&middot;<a href="#">服務條款</a></p>
+		<p class="text-end"><a href="#">Back to top</a></p>
       </div>
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <div class="card">
-            <img src="images/1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Sky</h5>
-              <p class="card-text">除了悠閒的娛樂，也有恐怖場景，讓人心驚膽跳的挑戰。</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="images/2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">裝扮</h5>
-              <p class="card-text">在遊戲中你可以換多樣化的服飾，從頭到腳，甚至可以改變身高，體型大小。</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="images/3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">煙火會</h5>
-              <p class="card-text">讓你在遊戲中也能跟朋友看到絢爛精采的煙火大會。</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card">
-            <img src="images/4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">動作</h5>
-              <p class="card-text">透過跟不同的先祖兌換，可以擁有不同的動作，姿勢，叫聲，讓娛樂更升級，讓肢體語言更豐富。</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-            Sky
-          </button>
-        </h2>
-        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-          <div class="accordion-body">
-            <strong>除了悠閒的娛樂，也有恐怖場景，讓人心驚膽跳的挑戰。</strong> 
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingtwo">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsetwo" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-            
-            裝扮
-          </button>
-        </h2>
-        <div id="panelsStayOpen-collapsetwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingtwo">
-          <div class="accordion-body">
-            <strong>在遊戲中你可以換多樣化的服飾，從頭到腳，甚至可以改變身高，體型大小。</strong>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-            煙火會
-          </button>
-        </h2>
-        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
-          <div class="accordion-body">
-            <strong>讓你在遊戲中也能跟朋友看到絢爛精采的煙火大會。</strong>
-          </div>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingfour">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsefour" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-            動作
-          </button>
-        </h2>
-        <div id="panelsStayOpen-collapsefour" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingfour">
-          <div class="accordion-body">
-            <strong>透過跟不同的先祖兌換，可以擁有不同的動作，姿勢，叫聲，讓娛樂更升級，讓肢體語言更豐富。</strong>
-          </div>
-        </div>
-      </div>
-      <div class="fixed-bottom text-end"><a href="index.html"><img src="images/home.jpg" width="15%"></a></div>
-      <div class="container text-center·be-light">
-        <p>&copy;南投高中電商二|賈千葵</p>
-      </div>
-</body>
+    </footer> 	
+  </body>
 </html>
